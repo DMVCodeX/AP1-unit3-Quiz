@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function Home() {
   return (
     <div className="container text-center mt-5">
-      <h1 className="home-title mb-3">🧬 Welcome to the Anatomy & Physiology 1 Quiz Prep🧬</h1>
+      <h1 className="home-title mb-3">🧬 Welcome to the Anatomy & Physiology Quiz Prep🧬</h1>
       <p className="mb-4 finger-paint">Test your knowledge and see how you score!</p>
       <div className="row row-cols-1 row-cols-md-2 g-4">
         <div className="col">

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./index.css"; // Make sure your CSS file has .quiz-btn styles
 
 const questionsData = [
   {
@@ -106,14 +107,12 @@ export function Quiz3() {
   const [feedback, setFeedback] = useState("");
 
   useEffect(() => {
-    // Shuffle questions
     const shuffled = [...questionsData].sort(() => Math.random() - 0.5);
     setQuestions(shuffled);
   }, []);
 
   const handleAnswer = (choice) => {
     const correctAnswer = questions[current].correct;
-
     if (choice.startsWith(correctAnswer)) {
       setScore(score + 1);
       setFeedback("✅ Correct!");
@@ -144,7 +143,9 @@ export function Quiz3() {
             Your final score: {score} / {questions.length}
           </h3>
           <p>🎉 Quiz complete!</p>
-          <button onClick={() => window.location.reload()}>Restart Quiz</button>
+          <button className="quiz-btn" onClick={() => window.location.reload()}>
+            Restart Quiz
+          </button>
         </div>
       ) : (
         <div>
@@ -153,17 +154,7 @@ export function Quiz3() {
           </h3>
           <div>
             {questions[current].choices.map((choice, i) => (
-              <button
-                key={i}
-                onClick={() => handleAnswer(choice)}
-                style={{
-                  display: "block",
-                  margin: "8px 0",
-                  padding: "10px",
-                  width: "100%",
-                  cursor: "pointer",
-                }}
-              >
+              <button key={i} className="quiz-btn" onClick={() => handleAnswer(choice)}>
                 {choice}
               </button>
             ))}

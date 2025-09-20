@@ -95,3 +95,41 @@ button:focus-visible {
 .finger-paint {
   font-family: 'Finger Paint', cursive;
 }
+
+.center {
+  display: block;
+  margin: 20px auto; /* centers the image */
+  max-width: 80%;   /* keeps it responsive */
+  height: auto;
+  border-radius: 8px; /* optional rounded corners */
+}
+
+.study-img {
+  display: block;
+  margin: 20px auto;
+  max-width: 500px; /* limits max size */
+  width: 100%;      /* makes it responsive */
+  height: auto;     /* keeps aspect ratio */
+  border-radius: 8px; /* optional, makes edges softer */
+}
+
+.quiz-btn {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  font-family: "Finger Paint", sans-serif;
+  font-weight: 500;
+  background-color: #e076c7; /* default dark button */
+  color: #ffffff; /* default text color */
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.quiz-btn:hover {
+  background-color: #87cefa; /* light blue hover */
+  color: #1a1a1a; /* dark text on hover */
+  border-color: #6495ed; /* slightly darker border for hover */
+}
