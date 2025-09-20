@@ -31,7 +31,7 @@ export function Home() {
               alt="..."
             />
             <div className="card-body">
-              <h5 class="card-title finger-pain ">Unit 4 Quiz Prep</h5>
+              <h5 class="card-title finger-paint ">Unit 4 Quiz Prep</h5>
               <hr />
               <p class="card-text finger-paint">COMING SOON!</p>
             </div>
