@@ -98,7 +98,7 @@ const questionsData = [
   },
 ];
 
-export function Quiz() {
+export function Quiz3() {
   const [questions, setQuestions] = useState([]);
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
