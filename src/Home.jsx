@@ -15,9 +15,9 @@ export function Home() {
               alt="..."
             />
             <div className="card-body">
-              <h5 className="card-title finger-paint">Unit 3 Quiz Prep</h5>
+              <h5 className="card-title finger-paint">Unit 3 Prep Quiz</h5>
               <hr />
-              <Link to="/quiz">
+              <Link to="/quiz3">
                 <button className="btn btn-outline-primary btn-lg">Start Quiz</button>
               </Link>
             </div>
@@ -31,9 +31,11 @@ export function Home() {
               alt="..."
             />
             <div className="card-body">
-              <h5 class="card-title finger-paint ">Unit 4 Quiz Prep</h5>
+              <h5 class="card-title finger-paint ">Unit 4 Study Guide</h5>
               <hr />
-              <p class="card-text finger-paint">COMING SOON!</p>
+              <Link to="/studyguide4">
+                <button className="btn btn-outline-primary btn-lg">Let's Study</button>
+              </Link>
             </div>
           </div>
         </div>
